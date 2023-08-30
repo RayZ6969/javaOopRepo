@@ -1,0 +1,7 @@
+package oopInterface;
+
+public interface Shape {
+	static double radius;
+	
+
+}

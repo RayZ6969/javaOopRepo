@@ -1,0 +1,37 @@
+package method;
+
+import java.util.Scanner;
+
+public class eg6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a number");
+		int num1=sc.nextInt();
+		
+		System.out.println("Enter two number");
+		int num2=sc.nextInt();
+		
+		System.out.println("Before swapping");
+		System.out.println("Num1 = "+num1+", Num2 = "+num2);
+		
+		swap(num1, num2);
+		
+		System.out.println("After swapping");
+		System.out.println("Num1 = "+num1+", Num2 = "+num2);
+		
+	}
+	
+	public static void swap(int a,int b) {
+		int temp=a;
+		a=b;
+		b=temp;
+		
+		System.out.println("After swapping");
+		System.out.println("a = "+a+", b = "+b);
+	}
+
+}

@@ -1,0 +1,22 @@
+package method;
+
+public class eg7 {
+	
+	static int a,b;
+	
+	public eg7(int a ,int b) {
+		this.a=a;
+		this.b=b;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(a);
+		eg7 a1=new eg7(10, 20);
+		System.out.println("a = "+a1.a+", b = "+a1.b);
+		System.out.println(a);
+		
+		
+	}
+
+}

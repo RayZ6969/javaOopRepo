@@ -1,0 +1,45 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class jFrametest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		JFrame frame=new JFrame();
+		frame.setVisible(true);
+		frame.setSize(500,300);
+//		frame.setSize(new Dimension(500,300));
+		frame.setLocation(new Point(200,100));
+		frame.setTitle("Window Page");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		frame.setLayout(new BorderLayout());
+		JButton btnlogin=new JButton();
+		btnlogin.setText("Login Button");
+		btnlogin.setBackground(Color.black);
+		
+		frame.add(btnlogin,BorderLayout.EAST);
+		
+		JButton btncancel=new JButton();
+		btncancel.setText("Cancel");
+		btncancel.setBackground(Color.blue);
+		
+		frame.add(btncancel,BorderLayout.NORTH);
+		
+		JButton btnok=new JButton();
+		btnok.setText("OK");
+		btnok.setBackground(Color.GREEN);
+		
+		frame.add(btnok,BorderLayout.NORTH);
+
+	}
+
+}

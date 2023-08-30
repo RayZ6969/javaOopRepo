@@ -1,0 +1,25 @@
+package oopInterface;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		circle cl=new circle(12);
+		System.out.println("Circle Area : "+cl.area());
+		System.out.println("Circle Perimeter : "+cl.per());
+		
+		System.out.println();
+		
+		rectangle rt=new rectangle(2,3);
+		System.out.println("Rectangle Area : "+rt.area());
+		System.out.println("Rectangle Perimeter : "+rt.per());
+		
+		System.out.println();
+		
+		triangle tri=new triangle(7,12,13);
+		System.out.println("Trianle Area : "+tri.area());
+		System.out.println("Triangle Perimeter : "+tri.per());
+		
+	}
+
+}
